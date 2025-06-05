@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>İlaç Ekle</title>
+</head>
+<body>
+    <h1>Yeni İlaç Ekle</h1>
+    <form id="ilacForm">
+        <label>İsim: <input type="text" name="isim" required /></label><br />
+        <label>Firma: <input type="text" name="firma" required /></label><br />
+      
+        <label>Kullanım Alanı: <input type="text" name="kullanimAlani" /></label><br />
+        <label>Yan Etkiler: <input type="text" name="yanEtkiler" /></label><br />
+        <label>Kimler Kullanmamalı: <input type="text" name="kimlerKullanmamali" /></label><br />
+        <label>Reçetesiz Alınabilir mi:
+            <select name="recetesizAlinabilirMi">
+                <option value="true">Evet</option>
+                <option value="false">Hayır</option>
+            </select>
+        </label><br />
+        <label>Reçete Rengi:
+            <select name="receteRengi">
+                <option value="Beyaz">Beyaz: Normal ilaçlar</option>
+                <option value="Yeşil">Yeşil: Bağımlılık yapma potansiyeli olan ilaçlar</option>
+                <option value="Kırmızı">Kırmızı: Psikotrop ilaçlar</option>
+                <option value="Mor">Mor: Narkotik ilaçlar</option>
+            </select>
+        </label><br />
+        <label>İlaç Formu:
+            <select name="form">
+                <option value="Hap">Hap</option>
+                <option value="Şurup">Şurup</option>
+                <option value="Ampul">Ampul</option>
+                <option value="Krem">Krem</option>
+                <option value="Sprey">Sprey</option>
+            </select>
+        </label><br />
+        <button type="submit">Kaydet</button>
+    </form>
+
+    <script>
+        document.getElementById("ilacForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+            const form = e.target;
+
+            const ilac = {
+                isim: form.isim.value,
+                firma: form.firma.value,
+              
+                kullanimAlani: form.kullanimAlani.value,
+                yanEtkiler: form.yanEtkiler.value,
+                kimlerKullanmamali: form.kimlerKullanmamali.value,
+                recetesizAlinabilirMi: form.recetesizAlinabilirMi.value === "true",
+                receteRengi: form.receteRengi.value,
+                ilacFormu: form.ilacFormu.value
+            };
+
+            fetch("/api/ilaclar", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(ilac)
+            })
+            .then(res => res.json())
+            .then(data => alert("İlaç eklendi: " + JSON.stringify(data)))
+            .catch(err => alert("Hata: " + err));
+        });
+    </script>
+</body>
+</html>
