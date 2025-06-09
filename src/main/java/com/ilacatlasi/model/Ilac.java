@@ -9,19 +9,26 @@ public class Ilac {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String isimVeForm; // Örnek: "Parol Tablet"
+    @Column(length = 1000)
+    private String isimVeForm;
 
+    @Column(length = 1000)
     private String kullanimAlani;
 
+    @Column(length = 2000)
     private String yanEtkiler;
 
-    private boolean recetesizAlinabilirMi;
+    @Column(length = 1000)
+    private String halkDili;
 
     private String receteRengi;
 
-    private String halkDili; // Örnek: "ateş düşürücü"
+    @Column(nullable = true)
+    private Boolean recetesizAlinabilirMi;
+
 
     // Getter ve Setter'lar
+
     public Long getId() {
         return id;
     }
@@ -54,12 +61,12 @@ public class Ilac {
         this.yanEtkiler = yanEtkiler;
     }
 
-    public boolean isRecetesizAlinabilirMi() {
-        return recetesizAlinabilirMi;
+    public String getHalkDili() {
+        return halkDili;
     }
 
-    public void setRecetesizAlinabilirMi(boolean recetesizAlinabilirMi) {
-        this.recetesizAlinabilirMi = recetesizAlinabilirMi;
+    public void setHalkDili(String halkDili) {
+        this.halkDili = halkDili;
     }
 
     public String getReceteRengi() {
@@ -70,12 +77,11 @@ public class Ilac {
         this.receteRengi = receteRengi;
     }
 
-    public String getHalkDili() {
-        return halkDili;
+    public Boolean getRecetesizAlinabilirMi() {
+        return recetesizAlinabilirMi;
     }
 
-    public void setHalkDili(String halkDili) {
-        this.halkDili = halkDili;
+    public void setRecetesizAlinabilirMi(Boolean recetesizAlinabilirMi) {
+        this.recetesizAlinabilirMi = recetesizAlinabilirMi;
     }
 }
-

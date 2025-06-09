@@ -15877,7 +15877,7 @@
     "halkDili": "Efervesan ağrı kesici ve kas gevşetici",
     "yanEtkiler": "Mide rahatsızlığı - bulantı - karın ağrısı - baş ağrısı - baş dönmesi - uyku hali",
     "receteRengi": "Beyaz",
-    "recetesizAlinabilMi": false
+    "recetesizAlinabilirMi": false
   },
   {
     "isimVeForm": "DEXPLUS 25/4 MG 20 EFERVESAN TABLET",
@@ -19025,7 +19025,7 @@
     "isimVeForm": "EFEXOR XR 150 MG 28 KAPSUL",
     "kullanimAlani": "Depresyon ve anksiyete bozuklukları tedavisinde kullanılır (uzatılmış salımlı kapsül).",
     "halkDili": "Uzun etkili depresyon ve kaygı ilacı (yüksek doz)",
-    "yanEtikiler": "Mide bulantısı, ağız kuruluğu, uyku bozuklukları, terleme, baş dönmesi, baş ağrısı.",
+    "yanEtkiler": "Mide bulantısı, ağız kuruluğu, uyku bozuklukları, terleme, baş dönmesi, baş ağrısı.",
     "receteRengi": "Kırmızı",
     "recetesizAlinabilirMi": false
   },
@@ -24920,7 +24920,7 @@
     "isimVeForm": "GLIBEN 5 MG 100 TABLET",
     "kullanimAlani": "Tip 2 diyabet (şeker hastalığı) tedavisinde kullanılır (sülfonilüre grubu).",
     "halkDili": "Şeker ilacı (eski tip)",
-    "yanEtikiler": "Hipoglisemi (kan şekeri düşüklüğü), mide bulantısı, ishal, baş ağrısı",
+    "yanEtkiler": "Hipoglisemi (kan şekeri düşüklüğü), mide bulantısı, ishal, baş ağrısı",
     "receteRengi": "Beyaz",
     "recetesizAlinabilirMi": false
   },
@@ -29457,7 +29457,7 @@
     "isimVeForm": "JIDREN 15 MG + 45 MG TABLET TEDAVI PAKETI 56 ADET (28 ADET 15 MG VE 28 ADET 45 MG TABLET)",
     "kullanimAlani": "Şizofreni tedavisinde kullanılan tedavi paketi (lurasidon, düşük ve orta doz).",
     "halkDili": "Şizofreni ilacı tedavi paketi (düşük-orta)",
-    "yanEtikiler": "Baş ağrısı, baş dönmesi, ödem, yorgunluk, çarpıntı, mide bulantısı",
+    "yanEtkiler": "Baş ağrısı, baş dönmesi, ödem, yorgunluk, çarpıntı, mide bulantısı",
     "receteRengi": "Kırmızı",
     "recetesizAlinabilirMi": false
   },

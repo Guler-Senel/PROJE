@@ -63,7 +63,7 @@ public class IlacController {
                 ilac.setIsimVeForm(yeniIlac.getIsimVeForm());
                 ilac.setKullanimAlani(yeniIlac.getKullanimAlani());
                 ilac.setYanEtkiler(yeniIlac.getYanEtkiler());
-                ilac.setRecetesizAlinabilirMi(yeniIlac.isRecetesizAlinabilirMi());
+                ilac.setRecetesizAlinabilirMi(yeniIlac.getRecetesizAlinabilirMi());
                 ilac.setReceteRengi(yeniIlac.getReceteRengi());
                 ilac.setHalkDili(yeniIlac.getHalkDili());
                 Ilac guncellenmis = ilacRepository.save(ilac);
