@@ -1,0 +1,146 @@
+/* Navbar logo için */
+.navbar-brand {
+  display: block;                    /* blok seviyesi, boyut verebilmek için */
+  width: 100px;                      /* logo genişliği */
+  height: 100px;                      /* logo yüksekliği */
+  background-image: url('https://www.upload.ee/image/18192258/Ads_z_tasar_m__45_.png');
+  background-size: contain;          /* resmi orana sadık küçültüp/büyütür */
+  background-repeat: no-repeat;      /* tekrar yok */
+  background-position: center;       /* ortalanmış konum */
+  text-indent: -9999px;              /* link içindeki metni gizle */
+  overflow: hidden;                  /* taşmayı önle */
+}
+
+/* Navbar’ın yüksekliğini logonuza göre ayarlamak isterseniz */
+.navbar {
+  min-height: 70px;
+}
+
+/* Mobilde de logonun taşmaması için isterseniz */
+@media (max-width: 768px) {
+  .navbar-brand {
+    width: 150px;
+    height: auto;
+    background-size: contain;
+  }
+}
+
+
+
+.hero-section {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../assets/pharmacy.jpeg'); /* senin görselin */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.navbar-custom {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.container-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+.menu a {
+  margin-left: 20px;
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: 8vw;
+  font-weight: 900;
+  color: white;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+  margin:0;
+  line-height: 1;
+
+}
+
+.ilac {
+  margin-bottom: -10px;
+}
+
+.atlasi {
+  margin-top: -10px;
+}
+
+
+.search-container {
+  margin-top: 30px;
+}
+
+.search-box {
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: none;
+  font-size: 1.2rem;
+  outline: none;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.85);
+  width: 300px;
+  max-width: 450px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+  color:#333;
+
+}
+
+.ilac {
+  margin-right: 270px; /* sola yasla */
+}
+
+.atlasi {
+  margin-left: 280px; /* sağa kaydır */
+}
+
+.search-box::placeholder {
+  color: #888;
+}
+
+.logo-image {
+  width: auto;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+

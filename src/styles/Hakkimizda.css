@@ -1,0 +1,69 @@
+
+/* CSS - src/styles/Hakkimizda.css */
+
+.hakkimizda-section {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  padding: 60px 40px;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Açık beyaz örtü */
+  z-index: 0;
+}
+
+.container-custom {
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 1;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.left-content,
+.right-content {
+  flex: 1;
+  padding-left: 60px;
+  min-width: 300px;
+  z-index: 1;
+  color: #fff;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.right-content h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 80px; 
+  color: #fff;
+  text-align: center;
+}
+
+.right-content ul li {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.contact-info h4 {
+  margin-top: 70px;
+  color: #fff;
+}

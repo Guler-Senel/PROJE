@@ -1,0 +1,258 @@
+.recete-container {
+  background-color: #0b1b2a;
+  color: white;
+  padding: 80px 40px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.recete-title {
+  font-size: 55px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: #fff;
+}
+
+.recete-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.recete-box {
+  background-color: #fff;
+  padding: 30px 25px;
+  border-radius: 16px;
+  width: 200px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.recete-box:hover {
+  transform: translateY(-20px);
+}
+
+.renk-baslik {
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 2px solid white;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+}
+
+.renk-aciklama {
+  font-size: 15px;
+  margin: 0;
+}
+/* src/styles/ReceteRenkleri.css */
+
+.recete-renkleri-section {
+  background-image: url('../assets/recete-arkaplan.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding: 60px 20px;
+  color: #fff;
+  text-align: center;
+  backdrop-filter: brightness(0.8);
+}
+
+.recete-renkleri-title {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 2px;
+  padding-top: 100px;
+}
+
+.recete-card {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 16px;
+  padding: 24px;
+  margin: 16px;
+  color: #fff;
+  min-width: 260px;
+  max-width: 280px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 12px rgba(0,0,0,0.5);
+}
+
+.recete-card h4 {
+  font-size: 1.5rem;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+/* ------------------------- */
+/* Eski .recete-container Bölümü */
+/* ------------------------- */
+.recete-container {
+  /* Yarı saydam koyu arka plan (%80 opaklık) */
+  background-color: rgba(11, 27, 42, 0.8);
+  color: #ffffff;
+  padding: 80px 40px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.recete-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: #ffffff;
+}
+
+.recete-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.recete-box {
+  /* Yarı saydam kutu arka planı (%60 opaklık) */
+  background-color: rgba(18, 44, 68, 0.6);
+  padding: 30px 25px;
+  border-radius: 16px;
+  width: 200px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  color: #ffffff;
+}
+
+.recete-box:hover {
+  transform: translateY(-5px);
+}
+
+.renk-baslik {
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  color: #ffffff;
+}
+
+.renk-aciklama {
+  font-size: 15px;
+  margin: 0;
+  color: #ffffff;
+}
+
+/* ------------------------- */
+/* src/styles/ReceteRenkleri.css */
+/* ------------------------- */
+.recete-renkleri-section {
+  position: relative;
+  background-image: url('../assets/recete-arkaplan.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding: 60px 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Arka plan karartma katmanı */
+.recete-renkleri-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+/* İçeriklerin üstte kalması için */
+.recete-renkleri-section > * {
+  position: relative;
+  z-index: 5;
+}
+
+.recete-renkleri-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.recete-card {
+  /* Yarı saydam siyah arka plan (%60 opaklık) */
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 16px;
+  padding: 24px;
+  margin: 16px;
+  color: #ffffff;
+  min-width: 260px;
+  max-width: 280px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease;
+}
+
+.recete-card:hover {
+  transform: translateY(-4px);
+}
+
+.recete-card h4 {
+  font-size: 1.5rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.recete-card p {
+  font-size: 0.9rem;
+  line-height: 1.3;
+  color: #ffffff;
+}
+
+@media (max-width: 576px) {
+  .recete-box {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .recete-card {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+}
+
+/* saydam renk ataması */
+.recete-renkleri-section .recete-card:nth-child(1) {
+  background-color: rgba(255, 255, 255, 0.2); /* beyaz %80 opak */
+}
+
+.recete-renkleri-section .recete-card:nth-child(2) {
+  background-color: rgba(255, 165,   0, 0.2); /* turuncu %80 opak */
+}
+
+.recete-renkleri-section .recete-card:nth-child(3) {
+  background-color: rgba(255,   0,   0, 0.2); /* kırmızı %80 opak */
+}
+
+.recete-renkleri-section .recete-card:nth-child(4) {
+  background-color: rgba(128,   0, 128, 0.2); /* mor %80 opak */
+}
+
+.recete-renkleri-section .recete-card:nth-child(5) {
+  background-color: rgba(  0, 128,   0, 0.2); /* yeşil %80 opak */
+}
+
+/* Menü Renk */
+#navbarNav .nav-link {
+  color: #fff !important;
+}
